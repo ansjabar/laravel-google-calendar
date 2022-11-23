@@ -1,0 +1,32 @@
+{
+	"name": "ansjabar/laravel-google-calendar",
+	"description": "Add events to Google Calendar using OAauth",
+    "keywords": ["laravel", "google-calendar"],
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Ans Jabar",
+            "email": "ans.jabar@gmail.com"
+        }
+	],
+    "support": {
+        "issues": "https://github.com/ansjabar/laravel-google-calendar/issues",
+        "source": "https://github.com/ansjabar/laravel-google-calendar"
+    },
+	"require": {
+		"php": "^7.0|^8.0"
+	},
+	"require-dev": {
+		"ext-curl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"AnsJabar\\LaravelGoogleCalendar\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [ "AnsJabar\\LaravelGoogleCalendar\\CalendarServiceProvider" ]
+		}
+	}
+}
